@@ -4,6 +4,10 @@ const scoreDisplay = document.querySelector(".score");
 const hackArea = document.querySelector(".hack-area");
 const statusDisplay = document.querySelector(".status");
 
+
+
+let secondsLeft = 20;
+
 btn.addEventListener("click", function () {
   secondsLeft = 20;
   score = 0;
@@ -42,11 +46,10 @@ btn.addEventListener("click", function () {
 
 
 // ШІ код
-let secondsLeft = 20;
+
 let score = 0;
 const maxScore = 15;
 let countdownLoop = null;
-
 const hackCommands = [
   "[0x7F]",
   "BYPASS",
